@@ -33,7 +33,7 @@ const GlobalHeader = () => {
   return <header className="App-header"> React Debt Calculator </header>;
 };
 
-const DebtEntryForm = ({ debtName, handleFormChange }) => {
+const DebtEntryForm = ({ handleFormChange }) => {
   return (
     <div className="App-form">
       <FormControl>
@@ -41,7 +41,7 @@ const DebtEntryForm = ({ debtName, handleFormChange }) => {
         <Input id="debt-name" onChange={handleFormChange("debtName")} />
       </FormControl>
       <FormControl>
-        <InputLabel htmlFor="debt-apr">APR</InputLabel>
+        <InputLabel htmlFor="debt-apr">Apr</InputLabel>
         <Input id="debt-apr" onChange={handleFormChange("debtApr")} />
       </FormControl>
       <FormControl>
